@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom properties to be updated for you own design */
+
+:root {
+    --ff-primary: "Montserrat", "Avenir", sans-serif;
+
+    --clr-hdr: #4F5D75;
+    --clr-light: #fff;
+    --clr-dark: #121212;
+
+    --ts: -1px -1px 0 var(--clr-dark), 1px -1px 0 var(--clr-dark), -1px 1px 0 var(--clr-dark), 1px 1px 0 var(--clr-dark);
+}
+
+body {
+    background: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+
+.square {
+    width: 30%;
+    background: var(--clr-hdr);
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 20%;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+#container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: var(--ts);
+    font-weight: normal;
+    line-height: 1.1;
+    color: var(--clr-light);
+    background: var(--clr-hdr);
+    margin: 0;
+    padding: 20px 0;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background: var(--clr-light);
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    color: var(--clr-light);
+    background: var(--clr-hdr);
+    text-shadow: var(--ts);
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: var(--clr-hdr);
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--clr-light);
+    background: var(--clr-hdr);
+    text-shadow: var(--ts);
+}
