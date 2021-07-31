@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom properties to be updated for you own design */
-
 :root {
     --ff-primary: "Montserrat", "Avenir", sans-serif;
 
@@ -48,7 +46,7 @@ h1 {
     text-transform: uppercase;
     text-shadow: var(--ts);
     font-weight: normal;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--clr-light);
     background: var(--clr-hdr);
     margin: 0;

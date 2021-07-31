@@ -10,7 +10,7 @@ let pickedColor;
 
 init();
 
-function init(){
+function init() {
     //mode buttons event listeners
     setupModeButtons();
     setUpSquares();
